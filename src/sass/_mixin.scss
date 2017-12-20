@@ -1,0 +1,19 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin transition ($properties){
+  -webkit-transition: $properties;
+    -moz-transition: $properties;
+      -o-transition: $properties;
+        transition: $properties;
+}
+@mixin transform ($properties){
+  -webkit-transform: $properties;
+    -moz-transform: $properties;
+      -o-transform: $properties;
+        transform: $properties;
+}

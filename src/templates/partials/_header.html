@@ -1,1 +1,19 @@
-<p>Hello from partials/_header.html</p>
+{% import "../data/data.html" as list %}
+<div class="header">
+	<div class="container">
+		<a class="logo" href="#"><img src="././img/logo.png"></a>
+		<ul class="nav" id="menu">
+			{% for item in list.menu %}
+				<li class="nav__item">
+					<a class="nav__link" href="#">{{item.link}}</a>
+				</li>
+			{% endfor %}		
+		</ul>
+		<a class="responsive-menu" id="responsive-menu" href="javascript:void(0);">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+	</div>
+</div>

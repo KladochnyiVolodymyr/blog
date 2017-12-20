@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello.js';
+import menuFunction from './lib/responsive_menu.js';
 
-sayHello();
+document.getElementById('responsive-menu').addEventListener('click', menuFunction);
