@@ -1,8 +1,8 @@
 @import "./_mixin.scss";
+@import "./_variables.scss";
 .header{
 	margin: 20px 0px;
 	width: 100%;
-	position: absolute;
 }
 .logo{
 	display: inline-block;
@@ -11,7 +11,7 @@
 	float: right;
 	margin-top: 15px;
 	@include clearfix;
-	@include r(769){
+	@include r($screen-md){
 		display: none;
 		float: none;
 		text-align: center;
@@ -19,7 +19,7 @@
 	&__item{
 		display:inline-block;
 		margin-left: 28px;
-		@include r(769){
+		@include r($screen-md){
 			display: block;
 			margin-top: 15px;
 		}
@@ -40,10 +40,10 @@
 	height: 35px;
 	position: relative;
 	cursor: pointer;
-	@include r(769){
+	@include r($screen-md){
 		display: inline-block;
 	  	position: absolute;
-	  	top: 4px;
+	  	top: 24px;
 	  	right: 35px;
 	}
 	@include transform (rotate(0deg));
@@ -92,7 +92,7 @@
 	}
 }
 .responsive{
-    @include r(769){
+    @include r($screen-md){
     	display: block;
     }
 }

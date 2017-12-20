@@ -1,0 +1,14 @@
+@import "./_variables.scss";
+.page-title{
+    background-color: rgba(232,96,60,.5); 
+}
+.page-title__text{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: rgb(232,96,60);
+    padding: 19px;
+    @include r($screen-md){
+        text-align: center;
+    }
+}
