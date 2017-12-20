@@ -1,8 +1,10 @@
 @import "./_mixin.scss";
 @import "./_variables.scss";
 .header{
-	margin: 20px 0px;
 	width: 100%;
+    padding: 20px 0px;
+    position: absolute;
+    top: 0px;
 }
 .logo{
 	display: inline-block;
@@ -31,7 +33,7 @@
 		font-size: 16px;
 		font-family: 'bebas';
 		&:hover{
-			color: #e75f3b;
+			color: $main-color;
 		}
 	}
 }

@@ -1,0 +1,52 @@
+@import "./_variables.scss";
+.post{
+    position: relative;
+    &__icon{
+        display: inline-block;
+        background-color: $main-color;
+        padding: 22px;
+        position: absolute;
+        left: -82px;
+    }
+    &__img{
+        margin-bottom: 25px;
+    }
+    &__metadata{
+        float: left;
+        width: 200px;
+    }
+    &__content{
+        margin-left: 200px;
+    }
+    &__title{
+        color: $main-color;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    &__content{
+        color: #414141;
+        font-size: 12px;
+    }
+}
+.post__img_size{
+    width: 100%;
+}
+.metadata__title{
+    color: $main-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.metadata__text{
+    color: #c8c8c8;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 7px;
+    &_border{
+        border-right: 1px solid #c8c8c8;
+        padding-right: 7px;
+    }
+}
+.metadata__item{
+    margin-bottom: 15px;
+}
