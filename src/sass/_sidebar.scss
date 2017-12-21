@@ -4,6 +4,9 @@
     width: 222px;
     &__item{
         margin-bottom: 39px;
+        @include r($screen-md){
+            text-align: center;
+        }
     }
     &__title{
         color: $main-color;
@@ -19,6 +22,10 @@
     }
     &__img{
         margin: 0px 2px 5px 0px;
+    }
+    @include r($screen-md){
+        float: none;
+        width: 100%;
     }
 }
 .sidebar__title_wrap{

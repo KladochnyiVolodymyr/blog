@@ -4,6 +4,12 @@
     float: left;
     width: 71%;
     @include clearfix;
+    @include r($screen-lg){
+        width: 67%;
+    }
+    @include r($screen-md){
+        width: 100%;
+    }
 }
 .post{
     position: relative;
@@ -13,6 +19,10 @@
         padding: 22px;
         position: absolute;
         left: -82px;
+        @include r(1130){
+            top: 10px;
+            left: 10px;
+        }
     }
     &__img{
         margin-bottom: 25px;
