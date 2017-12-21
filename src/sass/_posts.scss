@@ -4,6 +4,7 @@
     float: left;
     width: 71%;
     margin-right: 50px;
+    @include clearfix;
 }
 .post{
     position: relative;
@@ -23,15 +24,16 @@
     }
     &__content{
         margin-left: 200px;
+        color: #414141;
+        font-size: 12px;
+        p{
+            margin-bottom: 25px;
+        }
     }
     &__title{
         color: $main-color;
         font-size: 18px;
         text-transform: uppercase;
-    }
-    &__content{
-        color: #414141;
-        font-size: 12px;
     }
     &__description{
         @include clearfix;
@@ -61,4 +63,6 @@
 }
 .post__line{
     height: 14px;
+    background: url('../img/line.png');
+    margin: 25px 0px 55px 0px;
 }

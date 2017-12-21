@@ -1,3 +1,4 @@
+{% import "../data/data.html" as list %}
 <div class="sidebar">
     <div class="sidebar__item">
         <div class="sidebar__title_wrap">
@@ -10,11 +11,16 @@
             <h4 class="sidebar__title">categories</h4>
         </div>
         <ul class="sidebar__list">
-            <li class="sidebar__text">
-                <a href="#">
-                    
-                </a>
-            </li>
+            {% for item in list.sidebar__categories %}
+                <li>
+                    <a class="sidebar__text" href="#">
+                        {{item.link}}
+                    </a>
+                    <a class="sidebar__text" href="#">
+                        ({{item.value}})
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
