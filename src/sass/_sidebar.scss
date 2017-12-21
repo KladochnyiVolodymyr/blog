@@ -1,18 +1,25 @@
 @import "./_variables.scss";
-.sidebar__item{
-    margin-bottom: 39px;
-}
-.sidebar__title{
-    color: $main-color;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-.sidebar__text{
-    color: #464646;
-    font-size: 12px;
-    line-height: 1.5;
-    text-decoration: none;
+.sidebar{
+    float: right;
+    width: 222px;
+    &__item{
+        margin-bottom: 39px;
+    }
+    &__title{
+        color: $main-color;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__text{
+        color: #464646;
+        font-size: 12px;
+        line-height: 1.5;
+        text-decoration: none;
+    }
+    &__img{
+        margin: 0px 2px 5px 0px;
+    }
 }
 .sidebar__title_wrap{
     background: url('../img/line.png');
