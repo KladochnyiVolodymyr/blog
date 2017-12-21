@@ -42,7 +42,9 @@
     &__title{
         color: $main-color;
         font-size: 18px;
+        font-family: $font-bebas;
         text-transform: uppercase;
+        margin-bottom: 20px;
     }
     &__description{
         @include clearfix;
@@ -51,24 +53,28 @@
 .post__img_size{
     width: 100%;
 }
-.metadata__title{
-    color: $main-color;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-.metadata__text{
-    color: #c8c8c8;
-    font-size: 12px;
-    text-decoration: none;
-    margin-right: 7px;
-    &_border{
-        border-right: 1px solid #c8c8c8;
-        padding-right: 7px;
+.metadata{
+    &__title{
+        color: $main-color;
+        font-size: 12px;
+        font-family: $font-bebas;
+        text-transform: uppercase;
+        margin-bottom: 10px;
     }
-}
-.metadata__item{
-    margin-bottom: 15px;
+    &__text{
+        color: #c8c8c8;
+        font-size: 12px;
+        font-family: $font-helvetica;
+        text-decoration: none;
+        margin-right: 7px;
+        &_border{
+            border-right: 1px solid #c8c8c8;
+            padding-right: 7px;
+        }
+    }
+    &__item{
+        margin-bottom: 15px;
+    }
 }
 .post__line{
     height: 14px;
