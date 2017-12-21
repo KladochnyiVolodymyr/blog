@@ -17,11 +17,13 @@
         float: left;
         padding-right: 20px;
         background-color: #fff;
-        line-height: 10px;
+        line-height: 15px;
     }
     &__text{
         color: #464646;
         font-size: 12px;
+        font-family: $font-helvetica;
+        font-weight: bold;
         line-height: 1.5;
         text-decoration: none;
     }

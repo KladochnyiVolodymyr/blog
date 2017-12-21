@@ -35,6 +35,8 @@
         margin-left: 200px;
         color: #414141;
         font-size: 12px;
+        font-family: $font-helvetica;
+        font-weight: bold;
         p{
             margin-bottom: 25px;
         }
@@ -48,6 +50,15 @@
     }
     &__description{
         @include clearfix;
+    }
+    &__line{
+        height: 14px;
+        background: url('../img/line.png');
+        margin: 25px 0px 55px 0px;
+    }
+    &__quote{
+        background-color: #f4f4f4;
+        padding: 20px 34px;
     }
 }
 .post__img_size{
@@ -76,8 +87,15 @@
         margin-bottom: 15px;
     }
 }
-.post__line{
-    height: 14px;
-    background: url('../img/line.png');
-    margin: 25px 0px 55px 0px;
+.quote__img{
+    vertical-align: top;
+    margin-right: 19px;
+}
+.quote__text{
+    display: inline-block;
+    width: 90%;
+    font-size: 13px;
+    font-family: 'Conv_HelveticaNeue-Italic';
+    color: #474747;
+    line-height: 1.5;
 }
