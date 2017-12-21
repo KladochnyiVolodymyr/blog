@@ -1,4 +1,10 @@
 @import "./_variables.scss";
+@import "./_mixin.scss";
+.posts-list{
+    float: left;
+    width: 71%;
+    margin-right: 50px;
+}
 .post{
     position: relative;
     &__icon{
@@ -27,6 +33,9 @@
         color: #414141;
         font-size: 12px;
     }
+    &__description{
+        @include clearfix;
+    }
 }
 .post__img_size{
     width: 100%;
@@ -49,4 +58,7 @@
 }
 .metadata__item{
     margin-bottom: 15px;
+}
+.post__line{
+    height: 14px;
 }

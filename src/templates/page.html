@@ -7,7 +7,10 @@ title: blog
 	
 	{% include "partials/_header.html" %}
 	{% include "partials/_page-title.html" %}
-	{% include "partials/_posts.html" %}
-
-
+	<div class="main-content">
+		<div class="container">
+			{% include "partials/_posts.html" %}
+			{% include "partials/_sidebar.html" %}
+		</div>
+	</div>
 {% endblock %}
