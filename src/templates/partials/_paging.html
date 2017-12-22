@@ -1,0 +1,8 @@
+{% import "../data/data.html" as list %}
+<div class="paging">
+    <div class="container">
+        {% for item in list.paging %}
+            <a class="paging__item" href="#">{{item.count}}</a>
+        {% endfor %}
+    </div>
+</div>

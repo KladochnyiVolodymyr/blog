@@ -1,0 +1,20 @@
+@import "./_variables.scss";
+.paging{
+    margin-bottom: 100px;
+    &__item{
+        color: #fff;
+        font-family: $font-bebas;
+        font-size: 14px;
+        background-color: rgba(232,96,60,.5);
+        text-decoration: none;
+        margin-right: 4px;
+        margin-bottom: 100px;
+        display: inline-block;
+        width: 26px;
+        text-align: center;
+        padding: 6px 0px;
+        &:hover{
+            background-color: $main-color;
+        }
+    }
+}
