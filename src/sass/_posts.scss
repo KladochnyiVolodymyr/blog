@@ -30,6 +30,17 @@
     &__metadata{
         float: left;
         width: 200px;
+        @include r($screen-lg){
+            width: 150px;
+        }
+        @include r($screen-md){
+            width: 120px;
+        }
+        @include r($screen-sm){
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
     }
     &__content{
         margin-left: 200px;
@@ -39,6 +50,17 @@
         font-weight: bold;
         p{
             margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        @include r($screen-lg){
+            margin-left: 150px;
+        }
+        @include r($screen-md){
+            margin-left: 120px;
+        }
+        @include r($screen-sm){
+            margin-left: 0;
+            text-align: center;
         }
     }
     &__title{
@@ -63,6 +85,10 @@
 }
 .post__img_size{
     width: 100%;
+}
+.slider__img{
+    width: 100%;
+    display: block;
 }
 .metadata{
     &__title{
@@ -103,6 +129,9 @@
     line-height: 1.5;
     @include r(1130){
         padding: 20px 0px 20px 70px;
+    }
+    @include r($screen-md){
+        width: 100%;       
     }
 }
 .post__freebies{

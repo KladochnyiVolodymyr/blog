@@ -1,6 +1,9 @@
 @import "./_variables.scss";
 .paging{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    @include r($screen-md){
+        text-align: center;
+    }
     &__item{
         color: #fff;
         font-family: $font-bebas;
@@ -8,7 +11,6 @@
         background-color: rgba(232,96,60,.5);
         text-decoration: none;
         margin-right: 4px;
-        margin-bottom: 100px;
         display: inline-block;
         width: 26px;
         text-align: center;

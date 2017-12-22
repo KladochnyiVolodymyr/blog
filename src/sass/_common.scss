@@ -1,9 +1,12 @@
 @import "./_mixin.scss";
+body{
+	background: url('../img/bg.png');
+}
 .container{
 	width: 960px;
 	margin: 0 auto;
 	padding: 0px 10px;
-	background-color: #fff;
+	background: url('../img/bg.png');
 	@include clearfix;
 	@include r(1200){
 		width: 970px;
