@@ -90,12 +90,35 @@
 .quote__img{
     vertical-align: top;
     margin-right: 19px;
+    @include r(1130){
+        display: none;
+    }
 }
 .quote__text{
     display: inline-block;
     width: 90%;
     font-size: 13px;
-    font-family: 'Conv_HelveticaNeue-Italic';
+    font-family: $font-helvetica_italic;
     color: #474747;
     line-height: 1.5;
+    @include r(1130){
+        padding: 20px 0px 20px 70px;
+    }
+}
+.post__freebies{
+    padding-left: 110px;
+}
+.freebies__link{
+    color: #9f9f9f;
+    font-family: $font-helvetica;
+    font-size: 12px;
+    text-decoration: none;
+}
+.freebies__text{
+    color: #414141;
+    font-family: $font-helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 15px;
 }
