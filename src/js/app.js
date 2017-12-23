@@ -19,7 +19,3 @@ for(var i=0; i < prevButtons.length; i++) {
     plusDivs(slider, -1);
   });
 }
-
-$('#aniimated-thumbnials').lightGallery({
-  thumbnail:true
-});
