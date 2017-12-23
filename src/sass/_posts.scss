@@ -90,12 +90,6 @@
         padding: 20px 34px;
     }
 }
-.icon__img{
-    width: 28px;
-    @include r($screen-sm){
-        width: 20px;
-    }
-}
 .slider__img{
     width: 100%;
     display: block;
@@ -196,4 +190,27 @@
     font-weight: bold;
     line-height: 1.5;
     margin-top: 15px;
+}
+.icon{
+    &-gallery{
+        width: 28px;
+        height: 33px;
+        fill: #fff;
+    }
+    &-link{
+        @extend .icon-gallery;
+    }
+    &-quote{
+        @extend .icon-gallery;
+    }
+    &-document{
+        @extend .icon-gallery;
+    }
+}
+.icon-quote-red{
+    width: 25px;
+    height: 20px;
+    fill: $main-color;
+    vertical-align: top;
+    margin-right: 10px;
 }
