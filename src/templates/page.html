@@ -10,7 +10,12 @@ title: blog
 	<div class="main-content">
 		<div class="container">
 			{% include "partials/_sidebar.html" %}
-			{% include "partials/_posts.html" %}
+			<div class="posts-list">
+				{% include "partials/_post__first.html" %}
+				{% include "partials/_post__second.html" %}
+				{% include "partials/_post__third.html" %}
+				{% include "partials/_post__fourth.html" %}
+			</div>
 		</div>
 	</div>
 	{% include "partials/_paging.html" %}

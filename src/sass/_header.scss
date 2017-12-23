@@ -9,10 +9,11 @@
 }
 .logo{
 	display: inline-block;
+	width: 88px;
 }
 .nav{
 	float: right;
-	margin-top: 15px;
+	margin-top: 10px;
 	@include clearfix;
 	@include r($screen-md){
 		display: none;

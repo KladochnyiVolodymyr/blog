@@ -19,13 +19,20 @@
         padding: 22px;
         position: absolute;
         left: -82px;
+        z-index: 1;
         @include r(1130){
             top: 10px;
             left: 10px;
         }
+        @include r($screen-sm){
+            padding: 20px;
+        }
     }
     &__img{
         margin-bottom: 25px;
+        &_size{
+            width: 100%;
+        }
     }
     &__metadata{
         float: left;
@@ -83,13 +90,50 @@
         padding: 20px 34px;
     }
 }
-.post__img_size{
-    width: 100%;
+.icon__img{
+    width: 28px;
+    @include r($screen-sm){
+        width: 20px;
+    }
 }
 .slider__img{
     width: 100%;
     display: block;
 }
+.img__btn{
+    width: 35px;
+    position: absolute;
+    top: 40%;
+    background: transparent;
+    cursor: pointer;
+    &_size{
+        width: 40px;
+    }
+    &_next{
+        right: 10px;
+    }
+    &_prev{
+        left: 10px;
+    }
+    @include r($screen-sm){
+        width: 30px;
+        top: 50%;
+    }
+}
+.post__slider {    
+    position: relative;
+}
+.slider__img{
+    position:absolute; 
+    visibility: hidden; 
+    opacity: 0; transition: opacity 1s linear;
+} 
+.active{ 
+    position: relative; 
+    visibility: visible; 
+    opacity: 1;  
+}
+
 .metadata{
     &__title{
         color: $main-color;
@@ -135,7 +179,9 @@
     }
 }
 .post__freebies{
-    padding-left: 110px;
+    @include r(1130){
+        margin-left: 100px;
+    }
 }
 .freebies__link{
     color: #9f9f9f;

@@ -24,11 +24,11 @@
         </ul>
     </div>
     <div class="sidebar__item">
-            <div class="sidebar__title_wrap">
-                <h4 class="sidebar__title">photo gallery</h4>
-            </div>
-            {% for item in list.sidebar__gallery %}
-            <img class="sidebar__img" src="{{item.img}}">
-            {% endfor %}
+        <div class="sidebar__title_wrap">
+            <h4 class="sidebar__title">photo gallery</h4>
         </div>
+        {% for item in list.sidebar__gallery %}
+            <a href="#"><img class="sidebar__img" src="{{item.img}}"></a>
+        {% endfor %}
+    </div>
 </div>
