@@ -1,5 +1,7 @@
 import menuFunction from './lib/responsive_menu.js';
 import plusDivs from './lib/slider.js';
+import 'lightgallery';
+
 
 document.getElementById('responsive-menu').addEventListener('click', menuFunction);
 
@@ -19,3 +21,9 @@ for(var i=0; i < prevButtons.length; i++) {
     plusDivs(slider, -1);
   });
 }
+
+$('#aniimated-thumbnials').lightGallery({
+  thumbnail:true
+}); 
+
+

@@ -30,6 +30,9 @@
     &__img{
         margin: 0px 2px 5px 0px;
     }
+    &__link{
+        text-decoration: none;
+    }
     @include r($screen-md){
         float: none;
         width: 100%;

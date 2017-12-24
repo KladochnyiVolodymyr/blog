@@ -27,8 +27,12 @@
         <div class="sidebar__title_wrap">
             <h4 class="sidebar__title">photo gallery</h4>
         </div>
-        {% for item in list.sidebar__gallery %}
-            <a href="#"><img class="sidebar__img" src="{{item.img}}"></a>
-        {% endfor %}
+        <div id="aniimated-thumbnials">
+            {% for item in list.sidebar__gallery %}
+                <a class="sidebar__link" href="{{item.link}}">
+                    <img class="sidebar__img" src="{{item.img}}">
+                </a>
+            {% endfor %}
+        </div>
     </div>
 </div>
