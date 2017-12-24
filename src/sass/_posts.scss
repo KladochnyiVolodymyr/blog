@@ -122,6 +122,14 @@
     visibility: hidden; 
     opacity: 0; transition: opacity 1s linear;
 } 
+.lightSlider li img{
+    width: 100%;
+}
+.slider__btn{
+    @include r($screen-sm){
+        width: 25px;
+    }
+}
 .active{ 
     position: relative; 
     visibility: visible; 
@@ -196,6 +204,11 @@
         width: 28px;
         height: 33px;
         fill: #fff;
+        @include r($screen-sm){
+            width: 20px;
+            height: 20px;
+        }
+        
     }
     &-link{
         @extend .icon-gallery;
