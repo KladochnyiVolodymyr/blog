@@ -26,4 +26,17 @@ $('#aniimated-thumbnials').lightGallery({
   thumbnail:true
 }); 
 
+$('.sidebar__title_wrap').click(function(event) {
+  var block = $(event.currentTarget).next();
+  if ($(block).is(':hidden')) {
+
+    $(block).show('slow');
+
+  } else {
+
+    $(block).hide('slow');
+
+  }
+  return false;
+});
 

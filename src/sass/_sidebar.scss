@@ -16,7 +16,7 @@
         text-transform: uppercase;
         float: left;
         padding-right: 20px;
-        background-color: #fff;
+        background: url('../img/bg.png');
         line-height: 15px;
     }
     &__text{
@@ -42,4 +42,5 @@
     background: url('../img/line.png');
     @include clearfix;
     margin-bottom: 20px;
+    cursor: pointer;
 }
