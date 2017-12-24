@@ -41,14 +41,25 @@ $('.sidebar__title_wrap').click(function(event) {
   return false;
 });
 
-$(document).ready(function() {
-  $('#imageGallery').lightSlider({
-    gallery:false,
-    item:1,
-    loop:true,
-    thumbItem:9,
-    slideMargin:0,
-    enableDrag: false,
-    pager: false,
-  });  
-});
+
+/*$('#imageGallery').lightSlider({
+  gallery:false,
+  item:1,
+  loop:true,
+  slideMargin:0,
+  enableDrag: false,
+  pager: false,
+  prevHtml: '<img src="././img/prev.png">',
+  nextHtml: '<img src="././img/next.png">'
+});*/
+
+
+$('#lightSlider').lightSlider({
+  item: 1,
+  loop:true,
+  pager: false,
+  prevHtml:'<img src="././img/prev.png">',
+  nextHtml:'<img src="././img/next.png">'
+}); 
+
+
