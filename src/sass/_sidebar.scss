@@ -27,15 +27,21 @@
         line-height: 1.5;
         text-decoration: none;
     }
+    &__list{
+        display: none;
+    }
+    @include r($screen-md){
+        float: none;
+        width: 100%;
+    }
+}
+.gallery{
+    display: none;
     &__img{
         margin: 0px 2px 5px 0px;
     }
     &__link{
         text-decoration: none;
-    }
-    @include r($screen-md){
-        float: none;
-        width: 100%;
     }
 }
 .sidebar__title_wrap{
@@ -43,4 +49,7 @@
     @include clearfix;
     margin-bottom: 20px;
     cursor: pointer;
+}
+.sidebar__text_wrap{
+    display: none;
 }

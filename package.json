@@ -66,6 +66,7 @@
     "lodash": "^4.3.0"
   },
   "dependencies": {
-    "lightgallery": "^1.6.6"
+    "lightgallery": "^1.6.6",
+    "lightslider": "^1.1.6"
   }
 }

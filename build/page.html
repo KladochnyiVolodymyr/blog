@@ -37,7 +37,9 @@
             <div class="sidebar__title_wrap">
               <h4 class="sidebar__title">about jetro</h4>
             </div>
-            <p class="sidebar__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.</p>
+            <div class="sidebar__text_wrap">
+              <p class="sidebar__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.</p>
+            </div>
           </div>
           <div class="sidebar__item">
             <div class="sidebar__title_wrap">
@@ -80,22 +82,22 @@
             <div class="sidebar__title_wrap">
               <h4 class="sidebar__title">photo gallery</h4>
             </div>
-            <div id="aniimated-thumbnials"> <a class="sidebar__link" href="././img/post-img.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img_2.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img_2.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img_2.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img_2.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
-                </a> <a class="sidebar__link" href="././img/post-img.png">
-                    <img class="sidebar__img" src="././img/photo-gallery.png">
+            <div class="gallery" id="aniimated-thumbnials"> <a class="gallery__link" href="././img/post-img.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img_2.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img_2.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img_2.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img_2.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
+                </a> <a class="gallery__link" href="././img/post-img.png">
+                    <img class="gallery__img" src="././img/photo-gallery.png">
                 </a> </div>
           </div>
         </div>
@@ -103,8 +105,14 @@
           <div class="post">
             <div class="post__icon"> <svg class="icon icon-gallery"><use xlink:href="img/sprite.svg#icon-gallery"></use></svg> </div>
             <div class="post__img">
-              <div class="post__slider"> <img class="slider__img active" src="././img/post-img.png"> <img class="slider__img" src="././img/post-img_2.png"> <img class="slider__img" src="././img/post-img.png"> <img class="img__btn img__btn_prev" src="././img/prev.png"> <img class="img__btn img__btn_next"
-                  src="././img/next.png"> </div>
+              <div class="post__slider">
+                <!--<img class="slider__img active" src="././img/post-img.png">
+            <img class="slider__img" src="././img/post-img_2.png">
+            <img class="slider__img" src="././img/post-img.png">
+            <img class="img__btn img__btn_prev" src="././img/prev.png">
+            <img class="img__btn img__btn_next" src="././img/next.png">-->
+                <ul id="imageGallery"> <img src="././img/post-img_2.png" /> <img src="././img/post-img.png" /> </ul>
+              </div>
             </div>
             <div class="post__description">
               <div class="post__metadata">

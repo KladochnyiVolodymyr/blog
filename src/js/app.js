@@ -1,6 +1,7 @@
 import menuFunction from './lib/responsive_menu.js';
 import plusDivs from './lib/slider.js';
 import 'lightgallery';
+import 'lightslider';
 
 
 document.getElementById('responsive-menu').addEventListener('click', menuFunction);
@@ -40,3 +41,14 @@ $('.sidebar__title_wrap').click(function(event) {
   return false;
 });
 
+$(document).ready(function() {
+  $('#imageGallery').lightSlider({
+    gallery:false,
+    item:1,
+    loop:true,
+    thumbItem:9,
+    slideMargin:0,
+    enableDrag: false,
+    pager: false,
+  });  
+});
