@@ -25,7 +25,7 @@
             left: 10px;
         }
         @include r($screen-sm){
-            padding: 20px;
+            padding: 10px;
         }
     }
     &__img{
@@ -229,4 +229,12 @@
 }
 .lSAction>a{
     background: none;
+}
+
+#lightSlider img{
+    visibility: hidden;
+}
+
+#lightSlider.lightSlider img{
+    visibility: visible;
 }

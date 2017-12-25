@@ -1,3 +1,4 @@
+{% import "../data/data.html" as list %}
 <div class="post">
     <div class="post__icon">
         {{mixins.icon('gallery')}}
@@ -5,9 +6,9 @@
     <div class="post__img">
         <div class="post__slider">
             <ul id="lightSlider">
-                <li><img src="././img/post-img_2.png"/></li>
-                <li><img src="././img/post-img.png"/></li>
-                <li><img src="././img/post-img.png"/></li>
+                {% for item in list.slider %}
+                    <li><img src="{{item.img}}"/></li>
+                {% endfor %}
             </ul>
         </div>
     </div>

@@ -9,5 +9,6 @@ function menuFunction() {
   var btn = document.getElementById('responsive-menu');
   btn.classList.toggle('open');
 }
+
 module.exports = menuFunction;
   

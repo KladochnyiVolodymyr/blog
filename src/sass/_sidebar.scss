@@ -28,20 +28,24 @@
         text-decoration: none;
     }
     &__list{
-        display: none;
+        @include r($screen-md){
+            display: none;
+        }
     }
     @include r($screen-md){
         float: none;
         width: 100%;
     }
-}
-.gallery{
-    display: none;
-    &__img{
-        margin: 0px 2px 5px 0px;
-    }
-    &__link{
-        text-decoration: none;
+    &__gallery{
+        &__img{
+            margin: 0px 2px 5px 0px;
+        }
+        &__link{
+            text-decoration: none;
+        }
+        @include r($screen-md){
+            display: none;
+        }
     }
 }
 .sidebar__title_wrap{
@@ -51,5 +55,7 @@
     cursor: pointer;
 }
 .sidebar__text_wrap{
-    display: none;
+    @include r($screen-md){
+        display: none;
+    }
 }
